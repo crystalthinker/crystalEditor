@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import {ReactiveFormsModule} from "@angular/forms";
 import { AppComponent } from './app.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FroalaEditorModule.forRoot(),
     FroalaViewModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

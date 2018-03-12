@@ -9,4 +9,7 @@
   <textarea [froalaEditor] formControlName="editorData"></textarea>
   <button type="submit">Submit</button>
 </form>
-<div>{{editorForm.controls['editorData'].value}}</div>
+1.<div>{{editorForm.controls['editorData'].value}}</div>
+2.<textarea>{{editorForm.controls['editorData'].value}}</textarea>
+3. <input [ngModel]="editorForm.controls['editorData'].value"/>
+<div [froalaEditor] [(froalaModel)]="editorForm.controls['editorData'].value"></div>
